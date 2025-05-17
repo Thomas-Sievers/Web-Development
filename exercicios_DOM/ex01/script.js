@@ -1,5 +1,3 @@
-//Primeiro exercício
-
 taskForm.onsubmit = (event) => {
     event.preventDefault();
     const li = document.createElement('li');
