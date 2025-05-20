@@ -1,5 +1,7 @@
-let acesses = parseInt(localStorage.getItem("Acesses")) || 0;
-acesses++;
+let visitas = parseInt(localStorage.getItem("visitas")) || 0;
+visitas++;
+localStorage.setItem("visitas", visitas);
+document.body.innerHTML += `
+Visitas: ${visitas}
 
-localStorage.setItem("acesses", acesses);
-document.body.InnerHTML += `Visitas: ${acesses}`;
+`;
